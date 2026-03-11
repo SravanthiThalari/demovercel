@@ -6,16 +6,20 @@ function Reg() {
     name: "",
     email: "",
   });
+//   const changeName=(e)=>
+//   {
+//     setData({...data,[e.target.name]:e.target.value})
+//   }
 
   const submit = async () => {
     try {
       const res = await axios.post(
-        "https://new-1-rv4p.onrender.com/register",
+        "http://cabsystemsms-1.onrender.com/register",
         data
       );
       alert(res.data);
-    } catch (error) {
-      alert(error.message);
+    } catch (xyz) {
+      alert(xyz.message);
     }
   };
 
@@ -31,7 +35,7 @@ function Reg() {
           setData({ ...data, name: e.target.value })
         }
       />
-      <br /><br />
+      <br />
 
       <input
         type="email"
@@ -41,7 +45,7 @@ function Reg() {
           setData({ ...data, email: e.target.value })
         }
       />
-      <br /><br />
+      <br />
 
       <button onClick={submit}>Submit</button>
     </div>
