@@ -10,7 +10,7 @@ function Reg() {
   const submit = async () => {
     try {
       const res = await axios.post(
-        "https://cabsystemsms-1.onrender.com",
+        "https://new-1-rv4p.onrender.com",
         data
       );
       alert(res.data);
