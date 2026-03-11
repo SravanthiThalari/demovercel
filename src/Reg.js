@@ -10,7 +10,7 @@ function Reg() {
   const submit = async () => {
     try {
       const res = await axios.post(
-        "http://localhost:8080/reg",
+        "https://cabsystemsms-1.onrender.com",
         data
       );
       alert(res.data);
